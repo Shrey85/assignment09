@@ -8,7 +8,7 @@ const port = 3000;
 app.get('/say', async(req, res) => {
     try{
         const keyword = req.query.keyword;
-        const response = await axios.get('https://045qp4x4gg.execute-api.us-east-2.amazonaws.com/QA',{
+        const response = await axios.get('https://045qp4x4gg.execute-api.us-east-2.amazonaws.com/QA/my-function1',{
             params: {
                 keyword: Hello
             }
